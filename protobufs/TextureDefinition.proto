@@ -1,0 +1,29 @@
+// python -m grpc_tools.protoc -I ../protobufs --python_out=. \
+//         --grpc_python_out=. ../protobufs/recommendations.proto
+
+syntax = "proto3";
+
+enum TextureCategory {
+    MONOCHROME         = 0;
+    COLOR              = 1;
+    XYZ                = 2;
+}
+
+message RecommendationRequest  {
+    int32 user_id            = 1;
+    TextureCategory category = 2;
+    int32 max_results        = 3;
+}
+
+message TextureRecommendation     {
+    int32  id    = 1;
+    string title = 2;
+}
+
+message RecommendationResponse {
+    repeated TextureRecommendation recommendations = 1;
+}
+
+service Recommendations {
+    rpc Recommend (RecommendationRequest) returns (RecommendationResponse);
+}

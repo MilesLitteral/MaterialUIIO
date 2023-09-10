@@ -1,0 +1,3 @@
+db-pass: Qagdoh-dakras-9podny
+public-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlmeW96eGp6aXBscXd3ZGRuaGdtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTIyOTkyODYsImV4cCI6MjAwNzg3NTI4Nn0.xxXJyikXVLt6MFubGmKfDxxiUppAavoPPprV2u9bhr0
+url: https://yfyozxjziplqwwddnhgm.supabase.co
